@@ -1,6 +1,7 @@
 #!/usr/bin/env python      
 import tkinter as tk, ispi
-from tkinter import ttk   
+#from tkinter import ttk   
+import ttkbootstrap as ttk
 
 def convert():
     input = entry_int.get()
@@ -8,7 +9,7 @@ def convert():
     text = output[0] + output[1]
     output_string.set(text)
 
-window = tk.Tk()
+window = ttk.Window(themename = 'darkly')
 window.title("Typing Speed Tester")  
 width = window.winfo_screenwidth()
 height = window.winfo_screenheight()
